@@ -8,7 +8,17 @@
 </head>
 <script>
     function createAddressBook(){
+      const firstName =document.getElementById("firstName").value;
+      const lastName =document.getElementById("lastName").value;
+      const city =document.getElementById("city").value;
+      const state =document.getElementById("state").value;
+      const zip =document.getElementById("zip").value;
+      const phoneNumber =document.getElementById("phoneNumber").value;
+      const email =document.getElementById("email").value;
+      const address =document.getElementById("address").value;
+      console.log(firstName,lastName,city,state,zip,phoneNumber,email,address);
 
+      
     }
 </script>
 <body>
@@ -16,6 +26,17 @@
 <head></head>
 <body>
     <h1>Welcome To Address Book</h1>
+    <form>
+        <input type="text" name="firstName" id="firstName" placeholder="Enter First Name" />
+        <input type="text" name="lastName" id="lastName" placeholder="Enter Last Name" />
+        <input type="text" name="city" id="city" placeholder="Enter City" />
+         <input type="text" name="state" id="state" placeholder="Enter state" />
+        <input type="text" name="zip" id="zip" placeholder="Enter zip" />
+        <input type="text" name="phoneNumber" id="phoneNumber" placeholder="Enter Phone Number" />
+        <input type="text" name="address" id="address" placeholder="Enter address" />
+        <input type="text" name="email" id="email" placeholder="Enter Email" />
+        <input type="button" value="Create Address book" onclick="createAddressBook()" />
+    </form>
 </body>
     </html>
 </body>
